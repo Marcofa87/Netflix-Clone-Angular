@@ -1,0 +1,25 @@
+<table 
+  class="table-responsive{-sm|-md|-lg|-xl} table table-hover table-striped table-hover table-bordered"
+>
+  <thead class="table-dark">
+    <tr>
+      <th>Rank</th>
+      <th>Titolo</th>
+      <th>Copertina</th>
+      <th>Anno</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of api.items">
+      <td>{{ film.rank }}</td>
+      <td>{{ film.fullTitle }}</td>
+      <td> <a [routerLink]="['/film', film.id ]">
+        <img src="{{ film.image }}" class="rounded mx-auto d-block" [lazyLoad]="film.image"/>
+      </a></td>
+      <td [ngStyle]="{ backgroundColor: film.year / 2 % 1 ? '#96DED1' : '#F2D2BD' }">{{film.year}}</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+

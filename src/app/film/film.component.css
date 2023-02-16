@@ -1,0 +1,58 @@
+* {
+  font-family: monospace;
+  color: rgb(232, 79, 79);
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+img {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 100px;
+}
+
+.idfilm {
+  position: absolute;
+  left: 54%;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+
+h2,
+h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #fff;
+  max-width: 30%
+}
+
+p,
+li {
+  color: #fff;
+}
+
+.cast {
+  border-bottom: 1px solid #fff;
+  max-width: 15%;
+}
+
+.firstbox {
+  text-align: center;
+  background-color: rgb(172, 38, 38)
+}
+
+.similars li {
+  list-style: decimal;
+  margin: 0;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}

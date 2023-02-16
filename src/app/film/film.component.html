@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>{{ arrFilm.title }}</h1>
+  <div class="firstbox">
+    <p class="idfilm">{{ arrFilm.id }}</p>
+    <img src="{{ arrFilm.image }}" />
+  </div>
+  <div class="secondbox">
+    <h3>Trama:</h3>
+    <p>{{ arrFilm.plot }}</p>
+    <h3>Il Cast:</h3>
+    <ul>
+      <li *ngFor="let actor of arrFilm.actorList" class="cast">
+        {{ actor.name }}
+      </li>
+    </ul>
+    <h3>Regia:</h3>
+    <p>{{ arrFilm.directors }}</p>
+    <h3>Genere:</h3>
+    <p>{{ arrFilm.genres }}</p>
+  </div>
+  <div class="similartitle">
+    <h3>Titoli simili:</h3>
+    <ul class="similars">
+      <li *ngFor="let similar of arrFilm.similars">{{ similar.title }}</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Guarda il Trailer:</h2>
+    <iframe
+      width="800"
+      height="500"
+      [src]="transform(idUrl)"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</div>

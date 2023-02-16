@@ -1,0 +1,49 @@
+footer {
+  background-color: #0d6efd;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .images-container{
+    display:flex;
+    justify-content: space-between;
+    max-width:100%;
+    margin-top: 50px;
+  }
+
+
+  img {
+    width:30%;
+    
+}
+
+  
+
+  footer .social a i{
+    font-size: 2rem;
+    margin: 15px;
+    color: #fff;
+    transition: 0.8s;
+  }
+
+  /* footer #social i:hover {
+    background-color: #fff;
+  } */
+  footer .social .fa-instagram:hover {
+    color: rgb(159, 41, 41);
+    
+  }
+  
+  footer .social .fa-facebook:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  footer .social .fa-youtube:hover {
+    color: rgb(255, 0, 0);
+    
+  }
+  
+  
+  
